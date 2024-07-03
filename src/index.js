@@ -9,6 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+
+// Root Route
+app.get('/', (req, res) => {
+    res.send('Welcome to the Real Estate Management System API');
+});
+
 app.use('/api/properties', propertyRoutes);
 app.use('/api/localities', localityRoutes);
 
