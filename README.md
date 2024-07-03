@@ -1,0 +1,126 @@
+# Worko API Application
+
+This is a RESTful API using Node.js for a real estate management.
+
+## Prerequisites
+
+- Node.js 
+- PostgreSQL
+
+## Getting Started
+
+Follow these steps to clone and run the application locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kumarshivesh/node-real-estate-management.git
+cd node-real-estate-management
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory of the project and add the following:
+
+```bash
+DATABASE_URL=postgres://myuser:mypassword@localhost:5432/real_estate
+PORT=3000
+```
+
+
+### 4. Run the Application
+
+Start the development server.
+
+```bash
+npm start
+```
+
+## App Demo
+
+Refer this YouTube video for App demo
+
+[![RESTful API Demo](https://i.ibb.co/Hz0QyXn/restful-api-thumbnail.png)](https://youtu.be/mfW2NWYO0R4)
+
+Here are the next steps you can take to test your API and ensure everything is working correctly:
+
+
+### 1. Add New Property API
+
+1. Open Postman and create a new request.
+2. Select the Method: Choose `POST` from the dropdown menu.
+3. Enter the URL: Type http://localhost:3000/api/properties/add into the URL field. 
+4. Select `Body` as `raw (JSON)`. Paste the follwing in the `Body`:
+```
+{
+    "property_name": "Example8 Property",
+    "locality": "Example8 Locality",
+    "owner_name": "Example8 Owner"
+}
+```
+5. Send the Request: Click the "Send" button.
+6. View the Response: Verify the response.
+
+### 2. Fetch All Properties API
+
+1. Open Postman and create a new request.
+2. Select the Method: Choose `GET` from the dropdown menu.
+3. Enter the URL: Type http://localhost:3000/api/properties/fetch?locality_id=:userId into the URL field. Replace `:userId` with an actual user ID. 
+4. Select `Body` as `none`.
+5. Send the Request: Click the "Send" button.
+6. View the Response: Verify the response.
+
+### 3. Update Property Details API
+
+1. Open Postman and create a new request.
+2. Select the Method: Choose `PUT` from the dropdown menu.
+3. Enter the URL: Type http://localhost:3000/api/properties/update into the URL field.
+4. Select `Body` as `raw (JSON)`. Paste the follwing in the `Body`:
+```
+{
+    "property_id": 8,
+    "locality_id": 8,
+    "owner_name": "Updated Example8 Owner"
+}
+```
+5. Send the Request: Click the "Send" button.
+6. View the Response: Verify the response.
+
+### 4. Delete Property Record API
+
+1. Open Postman and create a new request.
+2. Select the Method: Choose `DELETE` from the dropdown menu.
+3. Enter the URL: Type http://localhost:3000/api/properties/delete into the URL field.
+4. Select `Body` as `raw (JSON)`. Paste the follwing in the `Body`:
+```
+{
+    "property_id": 8
+}
+```
+5. Send the Request: Click the "Send" button.
+6. View the Response: Verify the response.
+
+### 5. Get All Localities API
+
+1. Open Postman and create a new request.
+2. Select the Method: Choose `GET` from the dropdown menu.
+3. Enter the URL: Type http://localhost:3000/api/localities/all into the URL field. 
+4. Select `Body` as `none`.
+5. Send the Request: Click the "Send" button.
+6. View the Response: Verify the response.
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+[Node.js](https://nodejs.org/en)
+[express.js](https://expressjs.com/)
+
+
