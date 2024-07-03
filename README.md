@@ -46,7 +46,7 @@ npm start
 
 Refer this YouTube video for App demo
 
-[![RESTful API Demo](https://i.ibb.co/Hz0QyXn/restful-api-thumbnail.png)](https://youtu.be/mfW2NWYO0R4)
+[![RESTful API Demo](https://i.ibb.co/sHwK1VD/node-rem-thumbnail.png)](https://youtu.be/wrsCoRv-CnI)
 
 Here are the next steps you can take to test your API and ensure everything is working correctly:
 
@@ -71,7 +71,7 @@ Here are the next steps you can take to test your API and ensure everything is w
 
 1. Open Postman and create a new request.
 2. Select the Method: Choose `GET` from the dropdown menu.
-3. Enter the URL: Type http://localhost:3000/api/properties/fetch?locality_id=:userId into the URL field. Replace `:userId` with an actual user ID. 
+3. Enter the URL: Type http://localhost:3000/api/properties/fetch?locality_id=property_id into the URL field. Replace `property_id` with an actual property_id. 
 4. Select `Body` as `none`.
 5. Send the Request: Click the "Send" button.
 6. View the Response: Verify the response.
