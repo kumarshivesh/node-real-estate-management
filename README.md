@@ -71,7 +71,7 @@ Here are the next steps you can take to test your API and ensure everything is w
 
 1. Open Postman and create a new request.
 2. Select the Method: Choose `GET` from the dropdown menu.
-3. Enter the URL: Type http://localhost:3000/api/properties/fetch?locality_id=property_id into the URL field. Replace `property_id` with an actual property_id. 
+3. Enter the URL: Type http://localhost:3000/api/properties/fetch?locality_id=locality_id into the URL field. Replace `locality_id` with an actual locality_id. 
 4. Select `Body` as `none`.
 5. Send the Request: Click the "Send" button.
 6. View the Response: Verify the response.
