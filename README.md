@@ -1,4 +1,4 @@
-# Worko API Application
+# Node Real Estate Management API Application
 
 This is a RESTful API using Node.js for a real estate management.
 
